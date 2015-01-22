@@ -3,8 +3,8 @@
 angular.module('myYeomanProjectApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
+	  'title': 'Homes',
+	  'link': '/'
     }];
 
     $scope.isCollapsed = true;
