@@ -1,0 +1,26 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <h1 class="page-header">LOAN PROCESSING SHEET</h1>
+  
+  <table class="table">
+  
+  <tr >
+  	<td></td>
+    <td align="right">{{date | date:'dd-MMM-yy'}}</td>
+  </tr>
+  <tr>
+    <td><input type="radio" ng-model="renewal" value="new"> New</td>
+  	<td align="right"><input type="radio" ng-model="loantype" value="mpl"> MPL 
+  					<input type="radio" ng-model="loantype" value="special"> Special
+  	</td>
+  </tr>
+  <tr>
+    <td><input type="radio" ng-model="renewal" value="renewal"> Renewal</td>
+    <td align="right"><input type="radio" ng-model="loantype" value="regular"> Regular 
+   					<input type="radio" ng-model="loantype" value="others"> Others
+ 	</td>
+  </tr>
+</table>
+  
+</div>
